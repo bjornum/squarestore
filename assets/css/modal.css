@@ -19,7 +19,7 @@
     border-top: solid .3em var(--info);
 }
 .sq-modal-content{
-    padding: 2rem;
+     padding: 2rem; 
 }
 .sq-close-button{
     color:var(--text-default);

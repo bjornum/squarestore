@@ -101,7 +101,7 @@
   <div class="sq-main-bot">
 	<div class="sq-flex sq-mt-2 sq-mt-5">
       <button onclick="window.location.href='/products'" class="sq-height-2 sq-align-items-center sq-ml-15 sq-padding-4 max-width-15">Fortsett å handle</button>
-      <button onclick="window.location.href='/#'" class="sq-height-2 sq-align-items-center sq-mr-15 sq-justify-right sq-padding-4 max-width-15">Til Kassen</button>
+      <button onclick="window.location.href='/homepage'" class="sq-height-2 sq-align-items-center sq-mr-15 sq-justify-right sq-padding-4 max-width-15">Til Kassen</button>
 	</div>
   </div>
 </div>

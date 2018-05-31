@@ -35,7 +35,7 @@
   				<div class="sq-flex-1 sq-text-right">
   					<div class="sq-air-x-05 sq-nav-btn-group2 sq-flex-1">
         			<!-- UserButton -->
-        			<button>
+        			<button onclick="toggleModal('myModal')">
           			<svg id="i-user" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
               	<path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
           			</svg>
@@ -122,8 +122,43 @@
       </div>
     </div>
     <!-- /page -->
+
+	<!--login modal -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-  </body>
+	<div class="sq-modal" id="myModal" >
+	    <div class="sq-modal-body" style="width:24rem;">
+			<header>
+	            <div class="sq-close-button" onclick="toggleModal('myModal')">&times;</div>
+	        </header>
+	        <div class="sq-modal-content">
+					<section>
+						<form class="sq-form" action="index.html" method="post">
+	        				<fieldset>
+	          					<legend>Login</legend>
+	          					<label>Email</label>
+	          					<input type="email" name="" value="" placeholder="E-mail">
+	          					<label>Password</label>
+	          					<input type="password" name="" value="" placeholder="Password">
+	          					<div class=" sq-container">
+									<a href="/homepage">
+										<div class="sq-justify-left">
+												<button type="button" name="">Login</button>
+										</div>
+									</a>
+									<a href="/reguser">
+										<div class="sq-justify-right">
+											<button type="button" name="">New user</button>
+										</div>
+									</a>
+	          					</div>
+	        				</fieldset>
+						</form>
+	                </section>
+	        </div>
+	    </div>
+	</div>
+<!--Login modal end -->
+</body>
 </html>
 <script>
 function toggleModal2(socialMedia) {
@@ -132,4 +167,8 @@ social
     .classList
     .toggle("sq-show-modal");
 }
+window.toggleModal = (id)=> {
+var modal = document.getElementById(id);
+modal.classList.toggle('sq-modal-show');
+};
 </script>
