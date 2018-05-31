@@ -24,7 +24,6 @@ import "phoenix_html"
 window.toggleModal=(id)=> {
     var modal = document.getElementById(id);
     modal.classList.toggle('sq-modal-show');
-    alert("moo")
 };
 
 function toggleModal3(changeInfo) {
