@@ -21,6 +21,8 @@ config :squarestore, SquarestoreWeb.Endpoint,
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:user_id]
+# Configure Stripe API key
+config :stripity_stripe, api_key: "insert key"
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
