@@ -1,33 +1,33 @@
 <div class="sq-main-layout">
 	<div class="sq-panel sq-admin-bruker-listepanel sq-black"  style="overflow-y: auto;">
-		<table class="sq-tables" width="100%">
+		<table class="sq-tables sq-border-collapse" width="100%">
 		  <tr>
-			<th>Sortme 1</th>
-  		    <th>Sortme 2</th>
-  		    <th>Sortme 3</th>
-  		    <th>Sortme 4</th>
-  		    <th>Sortme 5</th>
+			<th>Kundenr</th>
+  		    <th>Fornavn</th>
+  		    <th>Etternavn</th>
+  		    <th>Land</th>
+  		    <th>registered</th>
 		  </tr>
 		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td>#1</td>
+			<td>Cato</td>
+			<td>Slideshow</td>
+			<td>Norge</td>
+			<td>30.05.2018</td>
 		  </tr>
 		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td>#2</td>
+			<td>Paul</td>
+			<td>Bossman</td>
+			<td>Norge</td>
+			<td>30.05.2018</td>
 		  </tr>
 		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td>#3</td>
+			<td>Ken</td>
+			<td>Typo</td>
+			<td>Norge</td>
+			<td>30.05.2018</td>
 		  </tr>
 		  <tr>
 			<td></td>
@@ -130,7 +130,7 @@
 	  </table>
 	</div>
 	<div class="sq-panel sq-admin-bruker-datapanel sq-black">
-		<table class="sq-tables">
+		<table class="sq-tables sq-border-collapse">
 			<tbody>
 				<tr>
 					<td>Name</td><td>Gunnar</td>
@@ -146,20 +146,20 @@
 		</table>
 	</div>
 	<div class="sq-panel sq-admin-bruker-logpanel sq-black" style="overflow-y: auto;">
-		<table class="sq-tables">
+		<table class="sq-tables sq-border-collapse">
 		  <tr>
-		    <th>Sortme 1</th>
-		    <th>Sortme 2</th>
-		    <th>Sortme 3</th>
-		    <th>Sortme 4</th>
-		    <th>Sortme 5</th>
+		    <th>fakturanr</th>
+		    <th>ordre</th>
+		    <th>dato</th>
+		    <th>Sum</th>
+		    <th>betalt</th>
 		  </tr>
 		  <tr>
-		    <td></td>
-		    <td></td>
-		    <td></td>
-		    <td></td>
-		    <td></td>
+		    <td>#1</td>
+		    <td>#1</td>
+		    <td>01.06.2018</td>
+		    <td>kr 0,-</td>
+		    <td>Nei</td>
 		  </tr>
 		  <tr>
 		    <td></td>

@@ -1,76 +1,85 @@
 <div class="sq-main-layout">
   <div class="sq-products-layout-area-header sq-panel sq-justify-center sq-mb-1" style="width:100%">
-      <h2 class="sq-text-center">Products</h2>  
+      <h2 class="sq-text-center">Products</h2>
   </div>
   <div class="sq-panel sq-products-search-layout-area-panel">
     <p class="sq-justify-center">Placeholder for sort function</p>
   </div>
-  <div class="sq-air-y-1 sq-panel sq-products-table-layout-area-panel"style="padding:0">
-    <table class="sq-justify-center sq-tables"width="100%" >
-      <thead>
-        <tr>
-          <th colspan="5">All Products</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Order nr</th>
-          <th>Date</th>
-          <th>info</th>
-          <th>Details</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td>13</td>
-          <td>28.05.2018</td>
-          <td>a red cup </td>
-          <td>some details</td>
-          <td>In Storage</td>
-        </tr>
-        <tr>
-          <td>23</td>
-          <td>28.05.2018</td>
-          <td>a pink cup </td>
-          <td>some details</td>
-          <td>Out of stock</td>
-        </tr>
-        <tr>
-          <td>54</td>
-          <td>28.05.2018</td>
-          <td>a cyan cup </td>
-          <td>some details</td>
-          <td>In Storage</td>
-        </tr>
-        <tr>
-          <td>43</td>
-          <td>28.05.2018</td>
-          <td>a blue cup </td>
-          <td>some details</td>
-          <td>Out of stock</td>
-        </tr>
-        <tr>
-          <td>55</td>
-          <td>28.05.2018</td>
-          <td>a black cup </td>
-          <td>some details</td>
-          <td>In Storage</td>
-        </tr>
-        <tr>
-          <td>66</td>
-          <td>28.05.2018</td>
-          <td>a green cup </td>
-          <td>some details</td>
-          <td>Out of stock</td>
-        </tr>
-        <tr>
-          <td>73</td>
-          <td>28.05.2018</td>
-          <td>a purple cup </td>
-          <td>some details</td>
-          <td>In Storage</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="sq-products-table-layout-area-panel"style="padding:0">
+    <div class="sq-air-y-1 sq-panel sq-flex-wrap sq-justify-space-between">
+      <div class="sq-product-card sq-card">
+        <div class="sq-card-header sq-text-center">
+          <p>Our amazing Coffee Cup</p>
+        </div>
+        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
+          <img src="/images/user.png" class="sq-product-img">
+        </div>
+        <div class="sq-card-footer sq-text-center">
+          <p class="sq-display-inline-block">Price: $19.99</p>
+          <button class="sq-margin-05">Info</button>
+          <button>Buy</button>
+        </div>
+      </div>
+      <div class="sq-product-card sq-card">
+        <div class="sq-card-header sq-text-center">
+          <p>Our amazing Coffee Cup</p>
+        </div>
+        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
+          <img src="/images/user.png" class="sq-product-img">
+        </div>
+        <div class="sq-card-footer sq-text-center">
+          <p class="sq-display-inline-block">Price: $19.99</p>
+          <button class="sq-margin-05">Info</button>
+          <button>Buy</button>
+        </div>
+      </div>
+      <div class="sq-product-card sq-card">
+        <div class="sq-card-header sq-text-center">
+          <p>Our amazing Coffee Cup</p>
+        </div>
+        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
+          <img src="/images/user.png" class="sq-product-img">
+        </div>
+        <div class="sq-card-footer sq-text-center">
+          <p class="sq-display-inline-block">Price: $19.99</p>
+          <button class="sq-margin-05">Info</button>
+          <button>Buy</button>
+        </div>
+      </div>
+      <div class="sq-product-card sq-card">
+        <div class="sq-card-header sq-text-center">
+          <p>Our amazing Coffee Cup</p>
+        </div>
+        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
+          <img src="/images/user.png" class="sq-product-img">
+        </div>
+        <div class="sq-card-footer sq-text-center">
+          <p class="sq-display-inline-block">Price: $19.99</p>
+          <button class="sq-margin-05">Info</button>
+          <button>Buy</button>
+        </div>
+      </div>
+      <div class="sq-product-card sq-card">
+        <div class="sq-card-header sq-text-center">
+          <p>Our amazing Coffee Cup</p>
+        </div>
+        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
+          <img src="/images/user.png" class="sq-product-img">
+        </div>
+        <div class="sq-card-footer sq-text-center">
+          <p class="sq-display-inline-block">Price: $19.99</p>
+          <button class="sq-margin-05">Info</button>
+          <button>Buy</button>
+        </div>
+      </div>
+      <div class="sq-product-card sq-card"></div>
+      <div class="sq-product-card sq-card"></div>
+      <div class="sq-product-card sq-card"></div>
+      <div class="sq-product-card sq-card"></div>
+      <div class="sq-product-card sq-card"></div>
+      <div class="sq-product-card sq-card"></div>
+      <div class="sq-product-card sq-card"></div>
+      <div class="sq-product-card sq-card"></div>
+    </div>
   </div>
 </div>
-

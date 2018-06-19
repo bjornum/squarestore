@@ -109,6 +109,16 @@ grid-area: 2 / 2 / span end / span end;
 .sq-products-table-layout-area-panel{
   grid-area: 3 / 2 / span end / span 7;
 }
+.sq-product-card{
+  height:20rem;
+  width:20rem;
+  background-color: var(--primary-highlight);
+  margin:0.5em;
+}
+.sq-product-img{
+  width:12em;
+  height:12em;
+}
 .sq-mr-4-7{margin-right: 4.7em}
 /* PK flex */
 .sq-flex-wrap{
@@ -122,11 +132,19 @@ grid-area: 2 / 2 / span end / span end;
   display:flex;
   flex-direction:column;
 }
+.sq-align-center{
+  align-items:center;
+}
+.sq-justify-space-between{
+  justify-content:space-between;
+}
+.sq-display-inline-block{
+  display:inline-block;
+}
 /* Invoice layout area */
 .sq-layout-area-invoice{
   grid-area: 2 / 3 / span 3 / span 5;
 }
-
 /*Alex homepage css */
 .sq-grid-area-landing-slideshow{
   grid-area: 1 / 2 / span 2 / span 7;
@@ -143,7 +161,7 @@ grid-area: 2 / 2 / span end / span end;
 .sq-landing-card{
   width:12rem;
   height:14rem;
-  background-color:lightgrey;
+  background-color:var(--primary-highlight);
   margin:0.5em;
 }
 /*custom admin modal window for products*/
@@ -321,4 +339,25 @@ grid-area: 2 / 2 / span end / span end;
 .sq-change-user-modal-window{
   margin: 2rem;
   margin-top: 0rem;
+}
+
+/* Footer Bottom */
+
+.sq-b-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.sq-1-3-grid{
+
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 1fr 5%  ;
+  height:100vh;
+
 }

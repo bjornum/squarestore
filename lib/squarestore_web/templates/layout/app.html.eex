@@ -12,7 +12,7 @@
   </head>
 
   <body class="sq-viewport">
-  <div class="sq-page">
+  <div class="sq-1-3-grid">
     <nav class="sq-nav-area">
       <div role="navigation" class="sq-navbar-layout">
   		<div class="sq-navbar-nav  sq-secondary sq-text-right">
@@ -35,6 +35,7 @@
   				<div class="sq-flex-1 sq-text-right">
   					<div class="sq-air-x-05 sq-nav-btn-group2 sq-flex-1">
         			<!-- UserButton -->
+					<button onclick="toggleModal('register')">Register</button>
         			<button onclick="toggleModal('myModal')">
           			<svg id="i-user" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
               	<path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
@@ -54,13 +55,13 @@
   			<!--NAVBAR Part 3/3 -->
   			<div class="sq-navbar-links sq-secondary-highlight sq-text-center">
   				<div class="sq-nav-btn-group">
-  					<Button>Categories</Button>
-  					<button>Some really cool things</button>
-  					<button>Some products</button>
-  					<button>other products</button>
-  					<button>other products</button>
-  					<button>All Products</button>
-  					<button>Campaign products</button>
+  					<Button onclick="location.href='http://localhost:4000/categories'">Categories</Button>
+            <button onclick="location.href='http://localhost:4000/products'">Products</button>
+  					<button onclick="location.href='http://localhost:4000/products'">White Kopps</button>
+  					<button onclick="location.href='http://localhost:4000/products'">Big Black Kopps</button>
+  					<button onclick="location.href='http://localhost:4000/products'">Bestselgere</button>
+  					<button onclick="location.href='http://localhost:4000/products'">Kampanjer</button>
+  					<button onclick="location.href='http://localhost:4000/userpage'">User Page</button>
   				</div>
   			</div>
   		</div>
@@ -122,7 +123,74 @@
       </div>
     </div>
     <!-- /page -->
+	<!-- Register modal -->
+	<div class="sq-modal" id="register">
+	    <div class="sq-modal-body" style="width:40rem;">
+	        <header>
+	            <div class="sq-close-button" onclick="toggleModal('register')">&times;</div>
+	        </header>
+	        <div class="sq-modal-content">
+	            <form class="sq-form" action="index.html" method="post" type="text">
+	                <h1 class="sq-text-center">Tabs
+	                    <span class="sq-subtext">Maddafakka</span>
+	                </h1>
+	                <div class="sq-container sq-flex-row sq-justify-center">
 
+	                    <div class="sq-tabs">
+	                        <input type="radio" id="tab-1" name="tab-group-1" checked>
+	                        <label for="tab-1">Personalia</label>
+	                        <div class="sq-tab">
+	                            <fieldset>
+	                                <legend>Personalia</legend>
+	                                <label>Country</label>
+	                                <input type="text" name="" value="" placeholder="Country">
+	                                <label>First Name</label>
+	                                <input type="text" name="" value="" placeholder="First name">
+	                                <label>Last name</label>
+	                                <input type="text" name="" value="" placeholder="Last name">
+	                                <label>Date of birth</label>
+	                                <input type="date" name="" value="">
+	                            </fieldset>
+	                        </div>
+	                    </div>
+	                    <div class="sq-tabs">
+	                        <input type="radio" id="tab-2" name="tab-group-1">
+	                        <label for="tab-2">Adress</label>
+	                        <div class="sq-tab">
+	                            <fieldset>
+	                                <legend>Adress</legend>
+	                                <label>Adress</label>
+	                                <input type="text" name="" value="" placeholder="Adress">
+	                                <label>AreaCode</label>
+	                                <input type="text" name="" value="" placeholder="AreaCode">
+	                                <label>Phone</label>
+	                                <input type="text" name="" value="" placeholder="Phone">
+	                            </fieldset>
+	                        </div>
+	                    </div>
+	                    <div class="sq-tabs">
+	                        <input type="radio" id="tab-3" name="tab-group-1">
+	                        <label for="tab-3">Email/Password</label>
+	                        <div class="sq-tab">
+	                            <fieldset>
+	                                <legend>Email/Password</legend>
+	                                <label>E-mail</label>
+	                                <input type="text" name="" value="" placeholder="E-mail">
+	                                <label>Password</label>
+	                                <input type="text" name="" value="" placeholder="Password">
+	                                <label>Retype Password</label>
+	                                <input type="text" name="" value="" placeholder="Retype Password">
+	                            </fieldset>
+	                        </div>
+	                    </div>
+	                </div>
+	            </form>
+	            <div class="sq-text-center">
+	                <button onclick="window.location.href='/homepage'" type="submit" class="sq-btn">Register</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 	<!--login modal -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
 	<div class="sq-modal" id="myModal" >
@@ -143,11 +211,6 @@
 									<a href="/homepage">
 										<div class="sq-justify-left">
 												<button type="button" name="">Login</button>
-										</div>
-									</a>
-									<a href="/reguser">
-										<div class="sq-justify-right">
-											<button type="button" name="">New user</button>
 										</div>
 									</a>
 	          					</div>

@@ -39,7 +39,7 @@
       <div class="sq-card"></div>
     </div>
     <div class="sq-air-y-1">
-      <table border="2" class=" sq-tables sq-custom-table-position sq-white sq-table-hover sq-table-row-padding-2">
+      <table border="2" class=" sq-tables sq-border-collapse sq-custom-table-position sq-white sq-table-hover sq-table-row-padding-2">
         <thead><strong>Fakturaoversikt</strong></thead>
         <tr>
           <th>Faktura Nr:</th>

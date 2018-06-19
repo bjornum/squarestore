@@ -1,7 +1,7 @@
-<div class="sq-main-layout">
+
   <div class="sq-layout-area-invoice">
     <div class="sq-invoice-card sq-flexbox-column">
-      <div class="sq-flexbox-row sq-margin-1 sq-shadow-sm sq-b-border" style="justify-content:space-around;margin:0;padding:1em;background-color:lightgrey;border-color:grey;">
+      <div class="sq-flexbox-row sq-margin-1 sq-shadow-sm sq-b-border sq-border-collapse" style="justify-content:space-around;margin:0;padding:1em;background-color:lightgrey;border-color:grey;">
         <button>Hold</button>
         <button>Not in use</button>
         <button>Cancel</button>
@@ -81,4 +81,3 @@
       </div>
     </div>
   </div>
-</div>
