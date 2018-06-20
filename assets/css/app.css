@@ -33,7 +33,7 @@ flex: 1;
 
 
 .sq-nav-btn-group button:hover {
-    background-color: var(--secondary-transparancy);
+    background-color: var(--secondary);
 }
 /* PK products layout area classes */
 .sq-products-layout-area-button{
@@ -70,11 +70,14 @@ flex: 1;
 .sq-btn-3 button:hover {
   background-color: var(--secondary-highlight);
 }
+.sq-nav-btn-group2 .sq-nav-btn2 {
+  padding-top: 12px;
+}
 .sq-nav-btn-group2 button {
   background-color: var(--secondary);
   border: none;
   color: white;
-  padding: 4px 20px;
+  padding: 4px 20px 5px 20px;
   cursor: pointer;
 }
 .sq-nav-btn-group2:after {
