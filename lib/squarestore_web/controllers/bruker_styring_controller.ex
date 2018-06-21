@@ -12,7 +12,10 @@ defmodule SquarestoreWeb.BrukerStyringController do
 	def show(conn, %{"id" => id}) do
 		users = Identity.list_users()
 		user = Identity.get_user!(id)
-		changeset = Identity.create_user(conn.params.user_params)
-	    render conn, "currentuser.html", users: users, user: user, changeset: changeset
+	    render conn, "currentuser.html", users: users, user: user
+	end
+	def create(conn, %{"user" => user_params}) do
+		changeset = Identity.create_user(user_params)
+		render conn, "currentuser.html", changeset: changeset
 	end
 end
