@@ -1,36 +1,116 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-</div>
-
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
+<div class="sq-main-layout">
+  <div class="sq-grid-area-landing-slideshow sq-mt-1">
+    <div class="sq-slideshow-container">
+      <div class="sq-mySlides fade">
+        <img src="\images\mountain.jpg" alt="" style="width:100%">
+      </div>
+      <div class="sq-mySlides fade">
+        <img src="\images\nature.jpg" alt="" style="width:100%">
+      </div>
+      <div class="sq-mySlides fade">
+        <img src="\images\sea.jpg" alt="" style="width:100%">
+      </div>
+        <a class="sq-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="sq-next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="sq-dot" onclick="currentSlide(1)"></span>
+      <span class="sq-dot" onclick="currentSlide(2)"></span>
+      <span class="sq-dot" onclick="currentSlide(3)"></span>
+    </div>
   </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
+  <div class="sq-grid-area-landing-campaign sq-text-center sq-mt-1">
+    <h1>Some campaign here</h1>
+  </div>
+  <div class="sq-grid-area-landing-best sq-mt-1 sq-mb-1">
+    <p class="sq-text-center">Hot right now!</p>
+    <div class="sq-panel sq-flex-wrap" style="justify-content:space-around;">
+      <div class="sq-landing-card sq-card sq-text-center">
+        <div class="sq-card-header">
+          <p>Super coffe mug</p>
+        </div>
+        <div class="sq-card-body">
+        </div>
+        <div class="sq-card-footer">
+          <p>Price:<del> $49.99</del> $29.99</p>
+        </div>
+      </div>
+      <div class="sq-landing-card sq-card sq-text-center">
+        <div class="sq-card-header">
+          <p>Super coffe mug</p>
+        </div>
+        <div class="sq-card-body">
+        </div>
+        <div class="sq-card-footer">
+          <p>Price:<del> $49.99</del> $29.99</p>
+        </div>
+      </div>
+      <div class="sq-landing-card sq-card sq-text-center">
+        <div class="sq-card-header">
+          <p>Super coffe mug</p>
+        </div>
+        <div class="sq-card-body">
+        </div>
+        <div class="sq-card-footer">
+          <p>Price:<del> $49.99</del> $29.99</p>
+        </div>
+      </div>
+      <div class="sq-landing-card sq-card sq-text-center">
+        <div class="sq-card-header">
+          <p>Super coffe mug</p>
+        </div>
+        <div class="sq-card-body">
+        </div>
+        <div class="sq-card-footer">
+          <p>Price:<del> $49.99</del> $29.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sq-grid-area-landing-news sq-mt-1 sq-mb-1">
+    <p class="sq-text-center">Fresh and new!</p>
+    <div class="sq-panel sq-flex-wrap" style="justify-content:space-around;">
+      <div class="sq-landing-card sq-card sq-text-center">
+        <div class="sq-card-header">
+          <p>Super coffe mug</p>
+        </div>
+        <div class="sq-card-body">
+        </div>
+        <div class="sq-card-footer">
+          <p>Price:<del> $49.99</del> $29.99</p>
+        </div>
+      </div>
+      <div class="sq-landing-card sq-card sq-text-center">
+        <div class="sq-card-header">
+          <p>Super coffe mug</p>
+        </div>
+        <div class="sq-card-body">
+        </div>
+        <div class="sq-card-footer">
+          <p>Price:<del> $49.99</del> $29.99</p>
+        </div>
+      </div>
+      <div class="sq-landing-card sq-card sq-text-center">
+        <div class="sq-card-header">
+          <p>Super coffe mug</p>
+        </div>
+        <div class="sq-card-body">
+        </div>
+        <div class="sq-card-footer">
+          <p>Price:<del> $49.99</del> $29.99</p>
+        </div>
+      </div>
+      <div class="sq-landing-card sq-card sq-text-center">
+        <div class="sq-card-header">
+          <p>Super coffe mug</p>
+        </div>
+        <div class="sq-card-body">
+        </div>
+        <div class="sq-card-footer">
+          <p>Price:<del> $49.99</del> $29.99</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
