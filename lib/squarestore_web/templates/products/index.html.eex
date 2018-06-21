@@ -17,8 +17,8 @@
           <img src="/images/user.png" class="sq-product-img">
         </div>
         <div class="sq-card-footer sq-text-center">
-          <p class="sq-display-inline-block"><%= product.base_price %></p>
-          <button class="sq-margin-05"> Info</button>
+          <p class="sq-display-inline-block"><%= product.base_price %>-,</p>
+          <button class="sq-margin-05"><%= link "Show", to: products_path(@conn, :show, product), class: "sq-nounderline sq-text-base" %></button>
           <button>Buy</button>
         </div>
       </div>
