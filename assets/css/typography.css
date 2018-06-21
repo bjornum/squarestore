@@ -46,6 +46,7 @@ p {font-size: 0.9rem;}
 .sq-overline{text-decoration: overline;}
 .sq-underline{text-decoration: underline;}
 .sq-linetrough{text-decoration: line-through;}
+.sq-nounderline{text-decoration: none;}
 
 /* Text Align */
 .sq-text-left{text-align: left !important;}

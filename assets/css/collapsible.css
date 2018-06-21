@@ -1,14 +1,12 @@
 /*the box before collapsible - connected to JS*/
 .sq-collapsible{
     cursor: pointer;
-    text-align:center; 
+    text-align:center;
   }
-  .active, .sq-collapsible:hover{
-    background-color:var(--muted);
-}
+
   /*the element that will be shown, the content*/
   .sq-collapsible-content{
-    display:none;
+    display: none;
     overflow:hidden;
     /*max-width:7em;*/
   }

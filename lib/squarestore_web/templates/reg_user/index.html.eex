@@ -17,8 +17,7 @@
                         <div class="sq-tab">
                             <fieldset>
                                 <legend>Personalia</legend>
-                                <label>Country</label>
-                                <input type="text" name="" value="" placeholder="Country">
+
                                 <label>First Name</label>
                                 <input type="text" name="" value="" placeholder="First name">
                                 <label>Last name</label>
@@ -38,6 +37,8 @@
                                 <input type="text" name="" value="" placeholder="Adress">
                                 <label>AreaCode</label>
                                 <input type="text" name="" value="" placeholder="AreaCode">
+                                <label>Country</label>
+                                <input type="text" name="" value="" placeholder="Country">
                                 <label>Phone</label>
                                 <input type="text" name="" value="" placeholder="Phone">
                             </fieldset>
@@ -53,8 +54,8 @@
                                 <input type="text" name="" value="" placeholder="E-mail">
                                 <label>Password</label>
                                 <input type="text" name="" value="" placeholder="Password">
-                                <label>Retype Password</label>
-                                <input type="text" name="" value="" placeholder="Retype Password">
+                                <label>Confirm Password</label>
+                                <input type="text" name="" value="" placeholder="Confirm Password">
                             </fieldset>
                         </div>
                     </div>

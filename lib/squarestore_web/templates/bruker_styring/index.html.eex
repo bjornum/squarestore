@@ -1,145 +1,45 @@
 <div class="sq-main-layout">
 	<div class="sq-panel sq-admin-bruker-listepanel sq-black"  style="overflow-y: auto;">
-		<table class="sq-tables sq-border-collapse" width="100%">
-		  <tr>
-			<th>Kundenr</th>
-  		    <th>Fornavn</th>
-  		    <th>Etternavn</th>
-  		    <th>Land</th>
-  		    <th>registered</th>
-		  </tr>
-		  <tr>
-			<td>#1</td>
-			<td>Cato</td>
-			<td>Slideshow</td>
-			<td>Norge</td>
-			<td>30.05.2018</td>
-		  </tr>
-		  <tr>
-			<td>#2</td>
-			<td>Paul</td>
-			<td>Bossman</td>
-			<td>Norge</td>
-			<td>30.05.2018</td>
-		  </tr>
-		  <tr>
-			<td>#3</td>
-			<td>Ken</td>
-			<td>Typo</td>
-			<td>Norge</td>
-			<td>30.05.2018</td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
+		<table class="sq-tables" width="100%">
+			<thead>
+		  	<tr>
+					<th>Kundenr</th>
+  		   	<th>Fornavn</th>
+  		   	<th>Etternavn</th>
+					<th>Telefon</th>
+					<th>Epost</th>
+		  	</tr>
+			</thead>
+		  <tbody>
+				<%= for user <- @users do %>
+				<tr>
+					<td><%= user.id %></td>
+					<td><%= user.fname %></td>
+					<td><%= user.lname %></td>
+					<td><%= user.phone %></td>
+					<td><%= user.email %></td>
+					<td><%= link "Show", to: bruker_styring_path(@conn, :show, user) %></td>
+				</tr>
+				<% end %>
+		  </tbody>
 	  </table>
 	</div>
+
+
 	<div class="sq-panel sq-admin-bruker-datapanel sq-black">
 		<table class="sq-tables sq-border-collapse">
 			<tbody>
 				<tr>
-					<td>Name</td><td>Gunnar</td>
+					<td>Name</td>
+					<td>Gunnar</td>
 				</tr>
 				<tr>
-					<td>Adresse</td><td>Rognposeveien 47</td>
+					<td>Adresse</td>
+					<td>Rognposeveien 47</td>
 				</tr>
 				<tr>
-					<td>Telefon</td><td>+69 66696999</td>
+					<td>Telefon</td>
+					<td>+69 66696999</td>
 				</tr>
 
 			</tbody>

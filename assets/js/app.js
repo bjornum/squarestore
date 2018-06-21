@@ -20,13 +20,28 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+var collaps = document.getElementsByClassName("sq-collapsible");
+var collapsContent = document.getElementsByClassName("sq-collapsible-content");
 
+var i;
+
+for (i = 0; i < collaps.length; i++){
+  collaps[i].addEventListener("click", function(){
+    this.classList.toggle("active");
+    var collapsContent = this.nextElementSibling;
+    if(collapsContent.style.display === "block"){
+      collapsContent.style.display ="none";
+    } else {
+        collapsContent.style.display="block";
+    }
+  });
+}
 window.toggleModal=(id)=> {
     var modal = document.getElementById(id);
     modal.classList.toggle('sq-modal-show');
 };
 
-function toggleModal3(changeInfo) {
+function toggleModal(changeInfo) {
     var change = document.getElementById("changeInfo");
     change
         .classList
@@ -44,4 +59,3 @@ window.toggleModal2=(socialMedia)=> {
         .classList
         .toggle("sq-show-modal");
 }
-

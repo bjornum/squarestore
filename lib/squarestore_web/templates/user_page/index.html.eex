@@ -13,20 +13,24 @@
             <li>Telefon:</li>
           </ul>
           <div class="sq-card-footer sq-btn-3">
-            <button onclick="toggleModal3()">Endre Informasjon</button>
-            <div id="modalshow" class="sq-modal-user-page">
-              <div class="sq-modal-content-user-page">
-                <span class="sq-close-button" onclick="toggleModal3(modalShow)">&times;</span>
-                <!--box-->
-                <h3>produktnummer</h3>
+            <button style="margin-top: -1em; float: right;" onclick="toggleModal('changeInfo')">Endre Informasjon</button>
+            
+            <div id="changeInfo" class="sq-modal sq-modal-user-page">
+              <!--box-->
+              <div class="sq-modal-content">
+                <form class="sq-form sq-modal-body"  method="post">
+                  <span class="sq-close-button" onclick="toggleModal('changeInfo')">&times;</span>
+                  <h1 class="sq-text-center">
+                  <span class="sq-subtext">Change info</span></h1>
+                  <input type="text" placeholder="Navn...">
+                  <input type="text" placeholder="Adresse...">
+                  <input type="text" placeholder="Faktura-Adresse">
+                  <input type="text" placeholder="Telefon...">
+                  <input type="submit" value="Submit">
+                </form>
               </div>
             </div>
-            <script>
-          		function toggleModal3(modalShow){
-             		 var show = document.getElementById("modalShow");
-             	 	show.classList.toggle("sq-show-modal");
-          		}
-        		</script>
+              <!--box end -->
           </div>
         </div>
       </div>
@@ -39,10 +43,14 @@
       <div class="sq-card"></div>
     </div>
     <div class="sq-air-y-1">
-      <table border="2" class=" sq-tables sq-border-collapse sq-custom-table-position sq-white sq-table-hover sq-table-row-padding-2">
+      <table border="2" class=" sq-tables sq-custom-table-position sq-white sq-table-hover sq-table-row-padding-2">
+        <colgroup>
+        <col span="3" style="display: none;">
+        <col style="display: none;">
+      </colgroup>
         <thead><strong>Fakturaoversikt</strong></thead>
-        <tr>
-          <th>Faktura Nr:</th>
+          <tr class="sq-collapsible" >
+          <th >Faktura Nr:</th>
           <th>Forfalls dato:</th>
           <th>Utsendelses dato:</th>
           <th>Totalt:</th>
@@ -51,28 +59,56 @@
           <th>KID:</th>
           <th>Betalt:</th>
         </tr>
-        <tr>
-          <td>1</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>5</td>
-        </tr>
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
       </table>
     </div>
   </div>

@@ -19,8 +19,8 @@
     --black: #0c0c0c;
     --grey: #d6d6d6;
     --white: #fafafa;
-    --muted: #b7b7b7;
-    --muted-highlight: #666;
+    --muted: #b7b7b7; /* Only use when muting things */ 
+    --muted-highlight: #666; /* Only use when muting things */
     --divider: #d6d6ff;
 
 	/* Shadows*/

@@ -17,9 +17,9 @@
     border:solid 1px black;
     padding:0.5em;
   }
-.sq-tables tr:nth-child(odd){background-color: var(--grey)}
+.sq-tables tr:nth-child(odd){background-color: var(--divider)}
 .sq-tables tr:hover{
-	background-color: var(--muted);
+	background-color: var(--grey);
 	color: var(--text-base);
 }
 .sq-tables tbody th::after{
