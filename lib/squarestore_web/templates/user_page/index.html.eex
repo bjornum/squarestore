@@ -79,7 +79,7 @@
         <col style="display: none;">
       </colgroup>
         <thead><strong>Fakturaoversikt</strong></thead>
-          <tr class="sq-collapsible" >
+          <tr>
           <th >Faktura Nr:</th>
           <th>Forfalls dato:</th>
           <th>Utsendelses dato:</th>
