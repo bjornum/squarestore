@@ -19,7 +19,7 @@ defmodule SquarestoreWeb.Router do
     get "/product", ProductController, :index
 	resources "/products", ProductsController
     get "/reguser", RegUserController, :index
-	get "/userpage", UserPageController, :index
+	resources"/userpage", UserPageController
 	get "/login", LoginController, :index
 	get "/tos", TosController, :index
   	get "/about", AboutController, :index
@@ -28,6 +28,7 @@ defmodule SquarestoreWeb.Router do
 	resources "/brukerstyring", BrukerStyringController
   get "/invoice", InvoiceController, :index
   get "/shopping", ShoppingController, :index
+  resources "/users", UserController
   end
 
 

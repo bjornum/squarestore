@@ -35,7 +35,8 @@
   				<div class="sq-flex-1 sq-text-right">
   					<div class="sq-air-x-05 sq-nav-btn-group2 sq-flex-1">
         			<!-- UserButton -->
-					<button class="sq-nav-btn2" onclick="toggleModal('register')">Register</button>
+							
+					<button class="sq-nav-btn2"><%= link "Register", to: user_path(@conn, :new) %></button>
 					<button onclick="toggleModal('myModal')">
 						<svg id="i-user" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
 							<path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
@@ -95,7 +96,7 @@
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <div style="justify-content: space-around; margin-top: -0.4rem;" class="sq-secondary sq-flex sq-flex-row sq-justify-center"><div>
-        <a href="#" onclick="toggleModal2()" class="sq-text-white sq-secondary">Social media</a>
+        <a href="#" class="sq-text-white sq-secondary">Social media</a>
       </div>
       <div>
         Phone: <a href="tel:0000" class="sq-text-white sq-secondary">#########</a>
@@ -115,35 +116,7 @@
     </div>
   </footer>
   <div>
-    <div onclick="toggleModal(myModal)" id="myModal" class="sq-modal-social-media">
-      <div onclick="toggleModal2()" class="sq-secondary sq-modal-content-social-media">
-        <span class="sq-secondary sq-close-button" onclick="toggleModal2()">&times;</span>
-        <!--box-->
-          <div class="sq-social-media-icons">
-            <div>
-              <svg id="i-twitter" viewBox="0 0 64 64" width="8rem" height="8rem">
-              <path stroke-width="0" fill="currentColor" d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z"/>
-              </svg>
-            </div>
-            <div>
-              <svg id="i-twitter" viewBox="0 0 64 64" width="8rem" height="8rem">
-              <path stroke-width="0" fill="currentColor" d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z"/>
-              </svg>
-            </div>
-            <div>
-              <svg id="i-twitter" viewBox="0 0 64 64" width="8rem" height="8rem">
-              <path stroke-width="0" fill="currentColor" d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z"/>
-              </svg>
-            </div>
-            <div>
-              <svg id="i-twitter" viewBox="0 0 64 64" width="8rem" height="8rem">
-              <path stroke-width="0" fill="currentColor" d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
     <!-- /page -->
 	<!-- Register modal -->
 	<div class="sq-modal" id="register">
@@ -246,12 +219,7 @@
 </body>
 </html>
 <script>
-function toggleModal2(socialMedia) {
-var social = document.getElementById("socialMedia");
-social
-    .classList
-    .toggle("sq-show-modal");
-}
+
 window.toggleModal = (id)=> {
 var modal = document.getElementById(id);
 modal.classList.toggle('sq-modal-show');
