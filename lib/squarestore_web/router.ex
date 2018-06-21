@@ -17,7 +17,7 @@ defmodule SquarestoreWeb.Router do
     pipe_through :browser # Use the default browser stack
     get "/", PageController, :index
     get "/product", ProductController, :index
-	get "/products", ProductsController, :index
+	resources "/products", ProductsController
     get "/reguser", RegUserController, :index
 	get "/userpage", UserPageController, :index
 	get "/login", LoginController, :index
@@ -25,7 +25,7 @@ defmodule SquarestoreWeb.Router do
   	get "/about", AboutController, :index
       get "/homepage", HomepageController, :index
       get "/adminprod", AdminProdController, :index
-	get "/brukerstyring", BrukerStyringController, :index
+	resources "/brukerstyring", BrukerStyringController
   get "/invoice", InvoiceController, :index
   get "/shopping", ShoppingController, :index
   end

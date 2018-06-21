@@ -6,80 +6,23 @@
     <p class="sq-justify-center">Placeholder for sort function</p>
   </div>
   <div class="sq-products-table-layout-area-panel"style="padding:0">
-    <div class="sq-air-y-1 sq-panel sq-flex-wrap sq-justify-space-between">
-      <div class="sq-product-card sq-card">
+    <div class="sq-air-y-1 sq-panel sq-flex-wrap sq-justify-space-evenly">
+
+      <%= for product <-@products do %>
+       <div class="sq-product-card sq-card">
         <div class="sq-card-header sq-text-center">
-          <p>Our amazing Coffee Cup</p>
+          <p><%= product.name %></p>
         </div>
         <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
           <img src="/images/user.png" class="sq-product-img">
         </div>
         <div class="sq-card-footer sq-text-center">
-          <p class="sq-display-inline-block">Price: $19.99</p>
-          <button class="sq-margin-05">Info</button>
+          <p class="sq-display-inline-block"><%= product.base_price %>-,</p>
+          <button class="sq-margin-05"><%= link "Show", to: products_path(@conn, :show, product), class: "sq-nounderline sq-text-base" %></button>
           <button>Buy</button>
         </div>
       </div>
-      <div class="sq-product-card sq-card">
-        <div class="sq-card-header sq-text-center">
-          <p>Our amazing Coffee Cup</p>
-        </div>
-        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
-          <img src="/images/user.png" class="sq-product-img">
-        </div>
-        <div class="sq-card-footer sq-text-center">
-          <p class="sq-display-inline-block">Price: $19.99</p>
-          <button class="sq-margin-05">Info</button>
-          <button>Buy</button>
-        </div>
-      </div>
-      <div class="sq-product-card sq-card">
-        <div class="sq-card-header sq-text-center">
-          <p>Our amazing Coffee Cup</p>
-        </div>
-        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
-          <img src="/images/user.png" class="sq-product-img">
-        </div>
-        <div class="sq-card-footer sq-text-center">
-          <p class="sq-display-inline-block">Price: $19.99</p>
-          <button class="sq-margin-05">Info</button>
-          <button>Buy</button>
-        </div>
-      </div>
-      <div class="sq-product-card sq-card">
-        <div class="sq-card-header sq-text-center">
-          <p>Our amazing Coffee Cup</p>
-        </div>
-        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
-          <img src="/images/user.png" class="sq-product-img">
-        </div>
-        <div class="sq-card-footer sq-text-center">
-          <p class="sq-display-inline-block">Price: $19.99</p>
-          <button class="sq-margin-05">Info</button>
-          <button>Buy</button>
-        </div>
-      </div>
-      <div class="sq-product-card sq-card">
-        <div class="sq-card-header sq-text-center">
-          <p>Our amazing Coffee Cup</p>
-        </div>
-        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
-          <img src="/images/user.png" class="sq-product-img">
-        </div>
-        <div class="sq-card-footer sq-text-center">
-          <p class="sq-display-inline-block">Price: $19.99</p>
-          <button class="sq-margin-05">Info</button>
-          <button>Buy</button>
-        </div>
-      </div>
-      <div class="sq-product-card sq-card"></div>
-      <div class="sq-product-card sq-card"></div>
-      <div class="sq-product-card sq-card"></div>
-      <div class="sq-product-card sq-card"></div>
-      <div class="sq-product-card sq-card"></div>
-      <div class="sq-product-card sq-card"></div>
-      <div class="sq-product-card sq-card"></div>
-      <div class="sq-product-card sq-card"></div>
+      <% end %>
     </div>
   </div>
 </div>

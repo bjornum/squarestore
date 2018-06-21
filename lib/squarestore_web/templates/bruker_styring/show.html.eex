@@ -1,0 +1,39 @@
+<table class="sq-tables sq-mb-5" width="100%" style="text-align:center">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>LastName</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @user.id %></td>
+      <td><%= @user.fname %></td>
+      <td><%= @user.lname %></td>
+      <td><%= @user.email %></td>
+      <td><%= @user.phone %></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="sq-tables" width="100%" style="text-align:center">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>LastName</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @adress.adress %></td>
+      <td><%= @adress.post_number %></td>
+      <td><%= @adress.city %></td>
+      <td><%= @adress.country %></td>
+    </tr>
+  </tbody>
+</table>

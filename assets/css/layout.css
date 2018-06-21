@@ -29,6 +29,7 @@
 .sq-navbar-links{
   grid-area: 3 / 1 / 4 / 2;
   height: var(--nav-element-height);
+  position: relative;
 }
 /* Navbar classes end */
 

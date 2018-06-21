@@ -13,4 +13,4 @@ for (i = 0; i < collaps.length; i++){
         collapsContent.style.display="block";
     }
   });
-}
+} 
