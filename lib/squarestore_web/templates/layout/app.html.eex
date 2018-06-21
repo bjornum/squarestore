@@ -124,7 +124,7 @@
     </div>
     <!-- /page -->
 	<!-- Register modal -->
-	<%= render SquarestoreWeb.UserPageView, "new.html", assigns %>
+
 	<!-- <div class="sq-modal" id="register">
 	    <div class="sq-modal-body" style="width:40rem;">
 	        <header>
