@@ -1,3 +1,4 @@
+
 <div class="sq-main-layout">
   <div class="sq-panel-main-top">
     <div class="sq-container sq-flex-row">
@@ -36,10 +37,6 @@
     <%= @user.country %>
   </li>
 
-  <li>
-    <strong>City:</strong>
-    <%= @user.city %>
-  </li>
 </ul>
 
           <div class="sq-card-footer sq-btn-3">
