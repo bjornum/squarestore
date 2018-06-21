@@ -10,7 +10,6 @@ defmodule Squarestore.Identity.User do
 		field :phone, :string
 		field :email, :string
 		field :password, :string
-		field :wishlist, :map
 		has_many :addresses, Squarestore.Identity.Address
 		timestamps()
 	end
@@ -19,7 +18,7 @@ defmodule Squarestore.Identity.User do
 		Logger.debug("number 1 ran")
 		user
 		|> Squarestore.Repo.preload(:addresses)
-		|> cast(attrs, [:fname, :lname, :phone, :email, :password, :wishlist, :id])
+		|> cast(attrs, [:fname, :lname, :phone, :email, :password, :id])
 		|> validate_required([:fname, :lname, :email])
 		|> put_assoc(:addresses, [addr])
 

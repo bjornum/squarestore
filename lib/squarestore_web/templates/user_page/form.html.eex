@@ -1,11 +1,4 @@
-<!-- <button onclick="toggleModal('myModal')">Click here to trigger the modal!</button>
-<div class="sq-modal" id="myModal">
-    <div class="sq-modal-body" style="width:40rem;">
-        <header>
-            <div class="sq-close-button" onclick="toggleModal('myModal')">&times;</div>
-        </header>
-        <div class="sq-modal-content"> -->
-		<%= form_for @changeset, @action, fn f -> %>
+<%= form_for @changeset, @action, fn f -> %>
             <form class="sq-form" action="index.html" method="post" type="text">
                 <h1 class="sq-text-center">Tabs
                     <span class="sq-subtext">Maddafakka</span>
@@ -19,11 +12,11 @@
                             <fieldset>
                                 <legend>Personalia</legend>
                                 <label>Country</label>
-                                <input type="text" name="" value="" placeholder="Country">
+                               <%= text_input f, :country %>
                                 <label>First Name</label>
-                                <input type="text" name="" value="" placeholder="First name">
+                                <%= text_input f, :fname %>
                                 <label>Last name</label>
-                                <input type="text" name="" value="" placeholder="Last name">
+                                <%= text_input f, :lname %>
                             </fieldset>
                         </div>
                     </div>
@@ -34,11 +27,11 @@
                             <fieldset>
                                 <legend>Address</legend>
                                 <label>Address</label>
-                                <input type="text" name="" value="" placeholder="Address">
-                                <label>AreaCode</label>
-                                <input type="text" name="" value="" placeholder="AreaCode">
+                                <%= text_input f, :address %>
+                                <label>ZipCode</label>
+                                <%= text_input f, :zip_code %>
                                 <label>Phone</label>
-                                <input type="text" name="" value="" placeholder="Phone">
+                                <%= text_input f, :phone %>
                             </fieldset>
                         </div>
                     </div>
@@ -49,11 +42,11 @@
                             <fieldset>
                                 <legend>Email/Password</legend>
                                 <label>E-mail</label>
-                                <input type="text" name="" value="" placeholder="E-mail">
+                                <%= text_input f, :email %>
                                 <label>Password</label>
-                                <input type="text" name="" value="" placeholder="Password">
+                                <%= text_input f, :password %>
                                 <label>Retype Password</label>
-                                <input type="text" name="" value="" placeholder="Retype Password">
+                                <%= text_input f, :password %>
                             </fieldset>
                         </div>
                     </div>
@@ -61,8 +54,3 @@
             </form>
                 <button onclick="window.location.href='/userpage'" type="submit" class="sq-btn">Register</button>
 				<% end %>
-				<!-- <div class="sq-text-center">
-            </div>
-        </div>
-    </div>
-</div> -->

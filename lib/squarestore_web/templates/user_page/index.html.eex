@@ -6,12 +6,14 @@
           <img class="sq-solid" style="max-width: 75px;max-height: 75px;" src="/images/user.png" alt="User"><br>
         </div>
         <div class="sq-card sq-mt-3">
+        <%= for user <- @users do %>
           <ul>
-            <li>Navn:</li>
-            <li>Addresse:</li>
-            <li>Faktura-Addresse:</li>
-            <li>Telefon:</li>
+            <li><%= user.fname %></li>
+            <li><%= user.lname %></li>
+            <li><%= user.email %></li>
+            <li><%= user.phone %></li>
           </ul>
+          <% end %>
           <div class="sq-card-footer sq-btn-3">
             <button onclick="toggleModal3()">Endre Informasjon</button>
             <div id="modalshow" class="sq-modal-user-page">

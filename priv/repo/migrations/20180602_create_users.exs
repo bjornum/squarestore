@@ -8,7 +8,7 @@ defmodule Compare.Repo.Migrations.CreateUsers do
 			add :phone, :string
 			add :email, :string
 			add :password, :string
-    		add :wishlist, :map
+
 
 			timestamps()
 		end

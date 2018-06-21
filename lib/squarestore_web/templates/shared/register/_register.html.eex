@@ -25,13 +25,10 @@
 									<label>First Name</label>
 
 
-									<input type="text" name="" value="" placeholder="First name">
-									<label>Last name</label>
-									<input type="text" name="" value="" placeholder="Last name">
-									<label>Date of birth</label>
-									<input type="date" name="" value="">
-								</fieldset>
-							</div>
+								<input type="text" name="" value="" placeholder="First name">
+								<label>Last name</label>
+								<input type="text" name="" value="" placeholder="Last name">
+							</fieldset>
 						</div>
 						<div class="sq-tabs">
 							<input type="radio" id="tab-2" name="tab-group-1">

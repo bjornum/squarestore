@@ -124,7 +124,7 @@
     </div>
     <!-- /page -->
 	<!-- Register modal -->
-	<%= render SquarestoreWeb.Shared.RegisterView, "_register.html", assigns %>
+	<%= render SquarestoreWeb.UserPageView, "new.html", assigns %>
 	<!-- <div class="sq-modal" id="register">
 	    <div class="sq-modal-body" style="width:40rem;">
 	        <header>
@@ -149,8 +149,6 @@
 	                                <input type="text" name="" value="" placeholder="First name">
 	                                <label>Last name</label>
 	                                <input type="text" name="" value="" placeholder="Last name">
-	                                <label>Date of birth</label>
-	                                <input type="date" name="" value="">
 	                            </fieldset>
 	                        </div>
 	                    </div>
