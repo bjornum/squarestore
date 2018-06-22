@@ -55,13 +55,13 @@
   			<!--NAVBAR Part 3/3 -->
   			<div class="sq-navbar-links sq-secondary-highlight sq-text-center">
   				<div class="sq-nav-btn-group">
-  					<Button onclick="location.href='http://localhost:4000/categories'">Categories</Button>
-            <button onclick="location.href='http://localhost:4000/products'">Products</button>
-  					<button onclick="location.href='http://localhost:4000/products'">White Kopps</button>
-  					<button onclick="location.href='http://localhost:4000/products'">Big Black Kopps</button>
-  					<button onclick="location.href='http://localhost:4000/products'">Bestselgere</button>
-  					<button onclick="location.href='http://localhost:4000/products'">Kampanjer</button>
-  					<button onclick="location.href='http://localhost:4000/userpage'">User Page</button>
+  					<a href="/categories">Categories</a>
+            <a href="/products">Products</a>
+  					<a href="/products">White Kopps</a>
+  					<a href="/products">Big Black Kopps</a>
+  					<a href="/products">Bestselgere</a>
+  					<a href="/products">Kampanjer</a>
+  					<a href="/user">Userpage</a>
   				</div>
   			</div>
   		</div>
@@ -123,73 +123,6 @@
       </div>
     </div>
     <!-- /page -->
-	<!-- Register modal -->
-
-	<!-- <div class="sq-modal" id="register">
-	    <div class="sq-modal-body" style="width:40rem;">
-	        <header>
-	            <div class="sq-close-button" onclick="toggleModal('register')">&times;</div>
-	        </header>
-	        <div class="sq-modal-content">
-	            <form class="sq-form" action="index.html" method="post" type="text">
-	                <h1 class="sq-text-center">Tabs
-	                    <span class="sq-subtext">Maddafakka</span>
-	                </h1>
-	                <div class="sq-container sq-flex-row sq-justify-center">
-
-	                    <div class="sq-tabs">
-	                        <input type="radio" id="tab-1" name="tab-group-1" checked>
-	                        <label for="tab-1">Personalia</label>
-	                        <div class="sq-tab">
-	                            <fieldset>
-	                                <legend>Personalia</legend>
-	                                <label>Country</label>
-	                                <input type="text" name="" value="" placeholder="Country">
-	                                <label>First Name</label>
-	                                <input type="text" name="" value="" placeholder="First name">
-	                                <label>Last name</label>
-	                                <input type="text" name="" value="" placeholder="Last name">
-	                            </fieldset>
-	                        </div>
-	                    </div>
-	                    <div class="sq-tabs">
-	                        <input type="radio" id="tab-2" name="tab-group-1">
-	                        <label for="tab-2">Address</label>
-	                        <div class="sq-tab">
-	                            <fieldset>
-	                                <legend>Address</legend>
-	                                <label>Address</label>
-	                                <input type="text" name="" value="" placeholder="Address">
-	                                <label>AreaCode</label>
-	                                <input type="text" name="" value="" placeholder="AreaCode">
-	                                <label>Phone</label>
-	                                <input type="text" name="" value="" placeholder="Phone">
-	                            </fieldset>
-	                        </div>
-	                    </div>
-	                    <div class="sq-tabs">
-	                        <input type="radio" id="tab-3" name="tab-group-1">
-	                        <label for="tab-3">Email/Password</label>
-	                        <div class="sq-tab">
-	                            <fieldset>
-	                                <legend>Email/Password</legend>
-	                                <label>E-mail</label>
-	                                <input type="text" name="" value="" placeholder="E-mail">
-	                                <label>Password</label>
-	                                <input type="text" name="" value="" placeholder="Password">
-	                                <label>Retype Password</label>
-	                                <input type="text" name="" value="" placeholder="Retype Password">
-	                            </fieldset>
-	                        </div>
-	                    </div>
-	                </div>
-	            </form>
-	            <div class="sq-text-center">
-	                <button onclick="window.location.href='/homepage'" type="submit" class="sq-btn">Register</button>
-	            </div>
-	        </div>
-	    </div>
-	</div> -->
 	<!--login modal -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
 	<div class="sq-modal" id="myModal" >
@@ -207,7 +140,7 @@
 	          					<label>Password</label>
 	          					<input type="password" name="" value="" placeholder="Password">
 	          					<div class=" sq-container">
-									<a href="/homepage">
+									<a href="/">
 										<div class="sq-justify-left">
 												<button type="button" name="">Login</button>
 										</div>
