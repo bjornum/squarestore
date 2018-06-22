@@ -13,9 +13,6 @@
         <a class="sq-prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="sq-next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-   
-  </div>
- 
   </div>
   <div class="sq-grid-area-landing-best sq-mt-1 sq-mb-1">
     <p class="sq-text-center">Hot right now!</p>
