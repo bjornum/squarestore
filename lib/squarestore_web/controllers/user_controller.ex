@@ -1,4 +1,4 @@
-defmodule SquarestoreWeb.UserPageController do
+defmodule SquarestoreWeb.UserController do
   use SquarestoreWeb, :controller
 
   alias Squarestore.Identity
@@ -19,7 +19,7 @@ defmodule SquarestoreWeb.UserPageController do
       {:ok, user} ->
         conn
         |> put_flash(:info, "User created successfully.")
-        |> redirect(to: user_page_path(conn, :show, user))
+        |> redirect(to: user_path(conn, :show, user))
  
     end
   end
@@ -42,7 +42,7 @@ defmodule SquarestoreWeb.UserPageController do
       {:ok, user} ->
         conn
         |> put_flash(:info, "User updated successfully.")
-        |> redirect(to: user_page_path(conn, :show, user))
+        |> redirect(to: user_path(conn, :show, user))
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "edit.html", user: user, changeset: changeset)
     end
