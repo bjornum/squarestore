@@ -1,16 +1,15 @@
 <h2>Listing Users</h2>
 
-<table class="table">
+<table class="sq-tables">
   <thead>
     <tr>
       <th>Fname</th>
       <th>Lname</th>
       <th>Email</th>
-      <th>Password</th>
       <th>Address</th>
       <th>Zip code</th>
       <th>Country</th>
-      <th>City</th>
+
 
       <th></th>
     </tr>
@@ -21,11 +20,10 @@
       <td><%= user.fname %></td>
       <td><%= user.lname %></td>
       <td><%= user.email %></td>
-      <td><%= user.password %></td>
       <td><%= user.address %></td>
       <td><%= user.zip_code %></td>
       <td><%= user.country %></td>
-      <td><%= user.city %></td>
+     
 
       <td class="text-right">
         <span><%= link "Show", to: user_path(@conn, :show, user), class: "btn btn-default btn-xs" %></span>

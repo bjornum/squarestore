@@ -25,7 +25,7 @@
       <!--NAVBAR Part 2/3-->
   		</div>
   			<div class="sq-navbar-domain  sq-secondary" style="width:100%;display:flex;">
-  				<a href="/homepage" class="sq-text-white sq-secondary">DummyDomain</a>
+  				<a href="/" class="sq-text-white sq-secondary">Home</a>
   				<div class="sq-flex-1"></div>
   				<!-- Searchbar -->
   				<div class="sq-flex-auto sq-form">
@@ -84,7 +84,7 @@
   					<button onclick="location.href='http://localhost:4000/products'">Big Black Kopps</button>
   					<button onclick="location.href='http://localhost:4000/products'">Bestselgere</button>
   					<button onclick="location.href='http://localhost:4000/products'">Kampanjer</button>
-  					<button onclick="location.href='http://localhost:4000/userpage'">User Page</button>
+  					<button onclick="location.href='http://localhost:4000/users'">Users</button>
 				</div>
   			</div>
   		</div>
@@ -99,93 +99,26 @@
         <a href="#" class="sq-text-white sq-secondary">Social media</a>
       </div>
       <div>
-        Phone: <a href="tel:0000" class="sq-text-white sq-secondary">#########</a>
+        Phone: <a href="#" class="sq-text-white sq-secondary">#########</a>
       </div>
       <div>
-        <a href="/about" class="sq-text-white sq-secondary">About</a>
+        <a href="#" class="sq-text-white sq-secondary">About</a>
       </div>
       <div>
-        <a href="/support" class="sq-text-white sq-secondary">Support</a>
+        <a href="#" class="sq-text-white sq-secondary">Support</a>
       </div>
       <div>
-        <a href="/faq" class="sq-text-white sq-secondary">FAQ</a>
+        <a href="#" class="sq-text-white sq-secondary">FAQ</a>
       </div>
       <div>
-        <a href="mailto:nobody@online.no" class="sq-text-white sq-secondary">Mail</a>
+        <a href="#" class="sq-text-white sq-secondary">Mail</a>
       </div>
     </div>
   </footer>
   <div>
    
     <!-- /page -->
-	<!-- Register modal -->
-	<div class="sq-modal" id="register">
-	    <div class="sq-modal-body" style="width:40rem; height:45rem;">
-	        <header>
-	            <div class="sq-close-button" onclick="toggleModal('register')">&times;</div>
-	        </header>
-	        <div class="sq-modal-content">
-	            <form class="sq-form" action="index.html" method="post" type="text" style="height: 38rem;">
-	                <h1 class="sq-text-center">Tabs
-	                    <span class="sq-subtext">Maddafakka</span>
-	                </h1>
-	                <div class="sq-container sq-flex-row sq-justify-center">
-
-	                    <div class="sq-tabs" style="height:3rem;">
-	                        <input type="radio" id="tab-1" name="tab-group-1" checked>
-	                        <label for="tab-1">Personalia</label>
-	                        <div class="sq-tab sq-justify-left">
-	                            <fieldset>
-	                                <legend>Personalia</legend>
-	                                <label>First Name</label>
-	                                <input type="text" name="" value="" placeholder="First name">
-	                                <label>Last name</label>
-	                                <input type="text" name="" value="" placeholder="Last name">
-	                                <label>Date of birth</label>
-	                                <input type="date" name="" value="">
-	                            </fieldset>
-	                        </div>
-	                    </div>
-	                    <div class="sq-tabs" style="height:3rem;">
-	                        <input type="radio" id="tab-2" name="tab-group-1">
-	                        <label for="tab-2">Adress</label>
-	                        <div class="sq-tab sq-justify-left" >
-	                            <fieldset>
-	                                <legend>Adress</legend>
-	                                <label>Adress</label>
-	                                <input type="text" name="" value="" placeholder="Adress">
-	                                <label>AreaCode</label>
-	                                <input type="text" name="" value="" placeholder="AreaCode">
-                                  <label>Country</label>
-                                  <input type="text" name="" value="" placeholder="Country">
-	                                <label>Phone</label>
-	                                <input type="text" name="" value="" placeholder="Phone">
-	                            </fieldset>
-	                        </div>
-	                    </div>
-	                    <div class="sq-tabs" style="height:3rem;">
-	                        <input type="radio" id="tab-3" name="tab-group-1">
-	                        <label for="tab-3">Account</label>
-	                        <div class="sq-tab sq-justify-left">
-	                            <fieldset>
-	                                <legend>Account</legend>
-	                                <label>E-mail</label>
-	                                <input type="text" name="" value="" placeholder="E-mail">
-	                                <label>Password</label>
-	                                <input type="text" name="" value="" placeholder="Password">
-	                                <label>Confirm Password</label>
-	                                <input type="text" name="" value="" placeholder="Confirm Password">
-	                            </fieldset>
-	                        </div>
-	                    </div>
-	                </div>
-	            </form>
-	            <div class="sq-text-center">
-	                <button onclick="window.location.href='/homepage'" type="submit" class="sq-btn">Register</button>
-	            </div>
-	        </div>
-	    </div>
-	</div>
+	
 	<!--login modal -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
 	<div class="sq-modal" id="myModal" >

@@ -47,6 +47,9 @@ p {font-size: 0.9rem;}
 .sq-underline{text-decoration: underline;}
 .sq-linetrough{text-decoration: line-through;}
 .sq-nounderline{text-decoration: none;}
+a:visited{
+    color:var(--white);
+}
 
 /* Text Align */
 .sq-text-left{text-align: left !important;}

@@ -14,14 +14,10 @@
         <a class="sq-next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    <div style="text-align:center">
-      <span class="sq-dot" onclick="currentSlide(1)"></span>
-      <span class="sq-dot" onclick="currentSlide(2)"></span>
-      <span class="sq-dot" onclick="currentSlide(3)"></span>
-    </div>
+  
   </div>
   <div class="sq-grid-area-landing-campaign sq-text-center sq-mt-1">
-    <h1>Some campaign here</h1>
+   
   </div>
   <div class="sq-grid-area-landing-best sq-mt-1 sq-mb-1">
     <p class="sq-text-center">Hot right now!</p>
