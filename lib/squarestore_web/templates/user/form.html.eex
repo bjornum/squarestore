@@ -1,7 +1,7 @@
 <%= form_for @changeset, @action, fn f -> %>
             <form class="sq-form" action="index.html" method="post" type="text">
-                <h1 class="sq-text-center">Tabs
-                    <span class="sq-subtext">Maddafakka</span>
+                <h1 class="sq-text-center">Register
+                    <span class="sq-subtext"></span>
                 </h1>
                 <div class="sq-container sq-flex-row sq-justify-center">
 
@@ -18,12 +18,6 @@
                                 <label>Last name</label>
                                 <%= text_input f, :lname %>
                             </fieldset>
-                        </div>
-                    </div>
-                    <div class="sq-tabs">
-                        <input type="radio" id="tab-2" name="tab-group-1">
-                        <label for="tab-2">Address</label>
-                        <div class="sq-tab">
                             <fieldset>
                                 <legend>Address</legend>
                                 <label>Address</label>
@@ -47,10 +41,11 @@
                                 <%= text_input f, :password %>
                                 <label>Retype Password</label>
                                 <%= text_input f, :password %>
+                                <button onclick="window.location.href='/user'" type="submit" class="sq-btn">Register</button>
                             </fieldset>
                         </div>
                     </div>
                 </div>
             </form>
-                <button onclick="window.location.href='/userpage'" type="submit" class="sq-btn">Register</button>
+                
 				<% end %>
