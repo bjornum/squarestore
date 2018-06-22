@@ -13,11 +13,14 @@
   }
 
   /*Containers end*/
+  .sq-tables{
+    border-collapse: collapse;
+  }
   .sq-tables th, .sq-tables td{
     border:solid 1px black;
     padding:0.5em;
   }
-.sq-tables tr:nth-child(odd){background-color: var(--divider)}
+.sq-tables tr:nth-child(odd){background-color: var(--background-secondary)}
 .sq-tables tr:hover{
 	background-color: var(--grey);
 	color: var(--text-base);

@@ -2,10 +2,10 @@
   
     <!--Top liste-->
     <div class="sq-flex sq-mt-4">
-      <div class="sq-ml-11">Varer</div>
-      <div class="sq-ml-43">Antall</div>
-      <div class="sq-ml-13-5">Pris</div>
-      <div class="sq-ml-15">Total Pris</div>
+      <div class="sq-ml-11">Products</div>
+      <div class="sq-ml-49">Amount</div>
+      <div class="sq-ml-13-5">Price</div>
+      <div class="sq-ml-15">Total Price</div>
     </div>
  
   <!--hoved "liste"-->
@@ -21,7 +21,7 @@
         </div>
         <!-- Item Beskrivelse-->
         <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-30">
-		Her skal en beskrivelse av produktet
+		Product Description
 		</div>
         <!--add and substract items-->
         <div class="sq-flex-row">
@@ -46,8 +46,8 @@
             </button>
           </div>
         </div>
-        <div class="sq-align-items-center sq-flex sq-ml-10-5 max-width-14">Pris </div>
-        <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-14"> Total Pris </div>
+        <div class="sq-align-items-center sq-flex sq-ml-10-5 max-width-14">Price </div>
+        <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-14"> Total Price </div>
         <div class="sq-align-items-center sq-flex sq-ml-9"> <button class="sq-height-2 sq-align-items-center">Delete</button> </div>
       </div>
       <!--End of Row 1-->
@@ -63,7 +63,7 @@
 			  </div>
 		  <!-- Item Beskrivelse-->
 		  <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-30">
-		Her skal en beskrivelse av produktet
+		Product Description
 		</div>
 		  <!--add and substract items-->
 		  <div class="sq-flex-row">
@@ -88,8 +88,8 @@
 			  </button>
 			</div>
 		  </div>
-		  <div class="sq-align-items-center sq-flex sq-ml-10-5 max-width-14">Pris </div>
-		  <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-14"> Total Pris </div>
+		  <div class="sq-align-items-center sq-flex sq-ml-10-5 max-width-14">Price </div>
+		  <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-14"> Total Price </div>
 		  <div class="sq-align-items-center sq-flex sq-ml-9"> <button class="sq-height-2 sq-align-items-center">Delete</button> </div>
 		</div>
       <!--Sum-->
@@ -100,8 +100,8 @@
  <!--knapper-->
   <div class="sq-main-bot">
 	<div class="sq-flex sq-mb-1">
-      <button onclick="window.location.href='/products'" class="sq-height-2 sq-align-items-center sq-ml-15 sq-padding-4 max-width-15">Fortsett å handle</button>
-      <button onclick="window.location.href='/homepage'" class="sq-height-2 sq-align-items-center sq-mr-15 sq-justify-right sq-padding-4 max-width-15">Til Kassen</button>
+      <button onclick="window.location.href='/products'" class="sq-height-2 sq-align-items-center sq-ml-15 sq-padding-4 max-width-15">Continue Shopping</button>
+      <button onclick="window.location.href='/homepage'" class="sq-height-2 sq-align-items-center sq-mr-15 sq-justify-right sq-padding-4 max-width-15">Checkout</button>
 	</div>
   </div>
 
