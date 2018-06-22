@@ -13,22 +13,19 @@ defmodule SquarestoreWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", SquarestoreWeb do
-    pipe_through :browser # Use the default browser stack
-    get "/", PageController, :index
-    get "/product", ProductController, :index
-	get "/products", ProductsController, :index
-    get "/reguser", RegUserController, :index
-	resources "/userpage", UserPageController
-	get "/login", LoginController, :index
-	get "/tos", TosController, :index
-  	get "/about", AboutController, :index
-      get "/homepage", HomepageController, :index
-      get "/adminprod", AdminProdController, :index
-	resources "/brukerstyring", BrukerStyringController
-  get "/invoice", InvoiceController, :index
-  get "/shopping", ShoppingController, :index
-  end
+	scope "/", SquarestoreWeb do
+		pipe_through :browser # Use the default browser stack
+		get "/", PageController, :index
+		get "/login", LoginController, :index
+		get "/tos", TosController, :index
+		get "/about", AboutController, :index
+		get "/invoice", InvoiceController, :index
+		get "/shopping", ShoppingController, :index
+		resources "/products", ProductsController
+		resources "/adminproducts", AdminProductController
+		resources "/adminuser", AdminUserController
+		resources "/user", UserController
+	end
 
 
   # Other scopes may use custom stacks.
